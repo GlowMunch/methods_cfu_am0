@@ -8,22 +8,26 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include? method is called on the string "Hello World"
+# No arguments are passed, include? returns a true false if the word "Hello" is in the string.
+# The return value is true
 "Hello World".include?("Hello")
 
-
+# Method .end with is ran on string "Hello World" asking if string ends with ("Hello")
+# Returns "false" since Hello is not at the end of string
 "Hello World".end_with?("Hello")
 
-
+# end with? method ran on string Hello World asking if string ends is "rld"
+# Returns true becuse rld ends true
 "Hello World".end_with?("rld")
 
-
+# .even? method ran on int 12 checking if its even
+# Returns true for 12 being even
 12.even?
 
-
+# .next ran on int 18
+# returns 19 because 19 is after 18
 18.next
-
-
 
 # SECTION 2: Calling methods on variables assigned to strings.
 # Declare 2 variables assigned to string objects.
@@ -38,6 +42,10 @@
 # The puts command prints the return value of the start_with? method (true) to the console.
 first_name = "Jeff"
 puts first_name.start_with?("J")
+
+number = 12
+puts number.call(2)
+
 
 
 
