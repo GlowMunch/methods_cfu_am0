@@ -43,10 +43,24 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
-number = 12
-puts number.call(2)
 
+# starts_with method checks string starts with argument 
+# applied to string stan wiht the argment chekcing if it ends with "an"
+# returns value true 
+friend = "Stan"
+puts friend.end_with?("an")
 
+# match? method applied to string "banana" checking argument 
+# if "an" is in the string. Return value is true
+fruit = "Banana"
+puts fruit.match?("an")
+
+# delete.suffix! method applied to string bellingham and remove argument
+# from end of string. returns nil if nothing is taken but returns remaining 
+# string if method passes.
+# returns bell in this instance
+city = "Bellingham"
+puts city.delete_suffix!("ingham")
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
@@ -54,6 +68,8 @@ puts number.call(2)
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+
 
 
 
