@@ -44,11 +44,10 @@ first_name = "Jeff"
 puts first_name.start_with?("J")
 
 
-# starts_with method checks string starts with argument 
-# applied to string stan wiht the argment chekcing if it ends with "an"
-# returns value true 
+# count method checks string `friend` for instance of "an"
+# return is 2 becuase it checks the number of matching characters from argument in string
 friend = "Stan"
-puts friend.end_with?("an")
+puts friend.count "an"
 
 # match? method applied to string "banana" checking argument 
 # if "an" is in the string. Return value is true
@@ -69,12 +68,32 @@ puts city.delete_suffix!("ingham")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# .hash method ran on age
+# returns integer hash code
+# puts -3752056319338514762
+age = 30
+puts age.hash
 
-
-
+# to_f method is ran on drivers int
+# changes it to float
+# output is 56.0
+drivers = 56
+puts drivers.to_f
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# pop method is applied on animals array
+# calls and removes last inst. in array
+# puts horse. If animal is puts then horse is removed
+animals = ["dog", "cat", "bird", "cow", "horse"]
+puts animals.pop
+
+# method push is applied to array cars
+# argument ("dodge") is used with method
+# return is that dodge is added to end of array cars
+cars = ["jeep", "ford", "kia", "volvo", "chevy"]
+puts cars.push ("dodge")
